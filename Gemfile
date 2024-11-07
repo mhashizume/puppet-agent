@@ -10,7 +10,7 @@ def location_for(place)
   end
 end
 
-gem 'vanagon', *location_for(ENV['VANAGON_LOCATION'] || '~> 0.24')
+gem 'vanagon', :git => 'https://github.com/mhashizume/vanagon.git' :branch => 'test/main/remote-validate-verbose'
 gem 'packaging', *location_for(ENV['PACKAGING_LOCATION'] || '~> 0.105')
 gem 'artifactory'
 gem 'rake'
